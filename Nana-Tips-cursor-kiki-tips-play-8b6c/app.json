@@ -1,0 +1,159 @@
+{
+  "expo": {
+    "name": "Kiki Tips",
+    "slug": "kiki-tips",
+    "scheme": "kikitips",
+    "version": "1.0.3",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kikitips.app"
+    },
+    "android": {
+      "versionCode": 4,
+      "package": "com.kikitips.app",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "com.google.android.gms.permission.AD_ID"
+      ],
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        "android.permission.REQUEST_INSTALL_PACKAGES",
+        "android.permission.QUERY_ALL_PACKAGES",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CONTACTS",
+        "android.permission.GET_ACCOUNTS"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#059669",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-image",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#059669"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F7FAF8",
+          "image": "./assets/icon.png",
+          "imageWidth": 96,
+          "dark": {
+            "image": "./assets/icon.png",
+            "backgroundColor": "#07130F"
+          }
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-6694991508008608~2765653658",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true,
+          "optimizeInitialization": false,
+          "optimizeAdLoading": false,
+          "userTrackingUsageDescription": "Kiki Tips uses this identifier to show ads that match your interests. You can decline and still read every story. If you decline, ads are not based on your activity across other apps and websites.",
+          "skAdNetworkItems": [
+            "22mmun2rn5.skadnetwork",
+            "2fnua5tdw4.skadnetwork",
+            "2u9pt9hc89.skadnetwork",
+            "3qcr597p9d.skadnetwork",
+            "3qy4746246.skadnetwork",
+            "3rd42ekr43.skadnetwork",
+            "3sh42y64q3.skadnetwork",
+            "4468km3ulz.skadnetwork",
+            "44jx6755aq.skadnetwork",
+            "47vhws6wlr.skadnetwork",
+            "4dzt52r2t5.skadnetwork",
+            "4fzdc2evr5.skadnetwork",
+            "578prtvx9j.skadnetwork",
+            "7ug5zh24hu.skadnetwork",
+            "8c4e2ghe7u.skadnetwork",
+            "8s468mfl3y.skadnetwork",
+            "97r2b46745.skadnetwork",
+            "9t245vhmpl.skadnetwork",
+            "a2p9lx4jpn.skadnetwork",
+            "c3frkrj4fj.skadnetwork",
+            "c6k4g5qg8m.skadnetwork",
+            "cp8zw746q7.skadnetwork",
+            "cstr6suwn9.skadnetwork",
+            "e5fvkxwrpn.skadnetwork",
+            "f38h382jlk.skadnetwork",
+            "gta9lk7p23.skadnetwork",
+            "hs6bdukanm.skadnetwork",
+            "k674qkevps.skadnetwork",
+            "kbd757ywx3.skadnetwork",
+            "kbmxgpxpgc.skadnetwork",
+            "klf5c3l5u5.skadnetwork",
+            "ludvb6z3bs.skadnetwork",
+            "mlmmfzh3r3.skadnetwork",
+            "n38lu8286q.skadnetwork",
+            "p78axxw29g.skadnetwork",
+            "ppxm28t8ap.skadnetwork",
+            "s39g8k73mm.skadnetwork",
+            "su67r6k2v3.skadnetwork",
+            "t38b2kh725.skadnetwork",
+            "tl55sbb4fm.skadnetwork",
+            "uw77j35x4d.skadnetwork",
+            "v4nxqhlyqp.skadnetwork",
+            "v72qych5uu.skadnetwork",
+            "v9wttpbfk9.skadnetwork",
+            "vutu7akeur.skadnetwork",
+            "wg4vff78zm.skadnetwork",
+            "wzmmz9fp6w.skadnetwork",
+            "y5ghdn5j9k.skadnetwork",
+            "yclnxrl5pm.skadnetwork",
+            "ydx93a7ass.skadnetwork"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "admob": {
+        "androidBanner": "ca-app-pub-6694991508008608/6916651654",
+        "iosBanner": ""
+      }
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
